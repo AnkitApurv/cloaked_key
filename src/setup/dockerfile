@@ -1,0 +1,13 @@
+FROM python:latest
+
+COPY src/setup/pip_requirements.txt /src/setup/pip_requirements.txt
+
+RUN pip install --no-cache-dir --upgrade -r /src/setup/pip_requirements.txt
+
+COPY src /src
+
+WORKDIR /src
+
+EXPOSE 80
+
+CMD ["python", "-m", "app"]
