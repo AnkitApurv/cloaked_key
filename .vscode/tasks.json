@@ -6,7 +6,7 @@
             "type": "docker-build",
             "dockerBuild": {
                 "context": "${workspaceFolder}",
-                "dockerfile": "${workspaceFolder}/src/setup/dockerfile",
+                "dockerfile": "${workspaceFolder}/setup/dockerfile",
                 "tag": "cloaked_key:latest",
             }
         },
